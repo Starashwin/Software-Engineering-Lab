@@ -2,7 +2,7 @@ package People;
 
 import java.io.PrintStream;
 
-public class Person {
+public class Person implements Cloneable{
 	protected String name;
 	protected Date bdate;
 	
@@ -31,6 +31,4 @@ public class Person {
 	public String toString() {
 		return "Name=" + name + ", Birth date = " + bdate;
 	}
-	
-	
 }
